@@ -60,7 +60,7 @@
     
 
 
-  ##### Login Sayfası
+  ##### Giriş Sayfası
 
 
     -    Kullanıcıdan öğrenci numarasına ait kullanıcı adı(örneğin G181210380@sakarya.edu.tr) ve şifre istenilip bir php sayfasına post edilmeli 
