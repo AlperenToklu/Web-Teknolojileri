@@ -1,0 +1,21 @@
+.footerstil p {
+        font-size: 1.2em;
+        color: #f44336;
+        line-height: 1.8em;
+        letter-spacing: 2px;
+    }
+.footerstil {
+   margin: 2em 0;
+    text-align: center;
+}
+.clear
+
+          {clear:both;}
+
+
+body{background: url(../images/mavi.jpg)repeat 0px 0px;
+ background-attachment: fixed;
+font-family: 'Open Sans', sans-serif;
+    
+    background-size: cover;
+    display:blocK;}
