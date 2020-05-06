@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>ILETISIM</title>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="js/filesaver.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+
+
+    <link href="css/iletisim.css" rel="stylesheet" type="text/css" media="all" />
+
+
+</head>
+<body>
+
+    <nav id="ana1" class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#"><a href="http://www.sakarya.edu.tr/"><img src="images/sau.jpg" height="30" width="30" /></a></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarText">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="anasayfa.html">ANASAYFA <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="hakkimda.html">HAKKIMDA</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="sehrim.html">SEHRİM</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="ozgecmis.html">OZGECMİS</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="iletisim.html">ILETİSİM</a>
+                </li>
+				<li class="nav-item">
+                    <a class="nav-link" href="girisyap.html">GİRİS YAP</a>
+                </li>
+
+            </ul>
+
+            <span class="navbar-text">
+
+            </span>
+        </div>
+    </nav>
+    
+
+    <div class="div1">
+        <h1>İLETİŞİM</h1>
+        <div class="digerdiv">
+            <h4>Soru Görüş ve Önerileriniz için mesajınızı bekliyoruz.</h4>
+
+
+            <a href="#mssgme"><img src="images/mesaj.jpg" alt="messageme" height="200" width="300"  /></a>
+
+            <h2>ALPEREN TOKLU</h2>
+            <h6>SAKARYA ÜNİVERSİTESİ</h6>
+
+
+
+            <p><img src="images/i1.png" alt=""> +90543...98..</p>
+            <p><img src="images/i2.png" alt=""> <a href="mailto:emre.mutlu3@sakarya.edu.tr"> alperen.toklu1@sakarya.edu.tr</a></p>
+
+
+
+
+
+            <form action="okuyucu.html" method="get">
+
+                <input id="mssgme" type="text" name="mssgme" placeholder="AD SOYAD">
+                <input id="Number" type="text" class="email" name="Number" placeholder="TELEFON">
+                <input id='email' name="email" placeholder="Email">
+
+
+                <textarea id='Message' name="Message" placeholder="Mesajınız..." required></textarea>
+
+                <h2 id='result'></h2>
+                <button type="reset" value="TEMIZLE">Temizle</button>
+                <input name="submit" type="submit" class="btn" id="login" readonly value="Gonder" disabled />
+
+            </form>
+
+
+        </div>
+    </div>
+
+    <div class="footerstil">
+        <p>DESİGNED BY ALPEREN TOKLU  @COPYRİGHT</p>
+    </div>
+
+
+</body>
+</html>
+
+
+    <script type="text/javascript">
+    
+        $(function () {
+            
+            $('#email').blur(function () {
+                var $result = $("#result");
+                var email = $("#email").val();
+                $result.text("");
+
+                if (validateEmail(email)) {
+                    $("#email").css('background-color', 'green');
+                    if (document.getElementById('email').style.backgroundColor == "green" && document.getElementById('Number').style.backgroundColor == "green" && document.getElementById('mssgme').style.backgroundColor == "green") {
+                        document.getElementById("login").disabled = false;
+                    }
+
+                } else {
+                    $("#email").css('background-color', 'red');
+                    document.getElementById("login").disabled = true;
+                }
+                return false;
+
+            });
+        });
+    </script>
+
+    <script>
+
+    function validateEmail(email) {
+        var re = /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+                return re.test(email);
+            }
+    </script>
+
+
+
+    <script type="text/javascript">
+
+            
+        $(function () {
+        var test ;
+                            
+        $('#mssgme').blur(function () {
+                                test = $("#mssgme").val();
+                            if (test == "") {
+                                $("#mssgme").css('background-color', 'red');
+                                document.getElementById("login").disabled = true;
+                        }
+        else {
+                                $("#mssgme").css('background-color', 'green');
+                                if (document.getElementById('email').style.backgroundColor == "green" && document.getElementById('Number').style.backgroundColor == "green" && document.getElementById('mssgme').style.backgroundColor == "green") {
+                                    document.getElementById("login").disabled = false;
+                                }
+                        }
+                    });
+                });
+    </script>
+
+    <script type="text/javascript">
+
+
+        $(function () {
+        var test2;
+                                
+        $('#Number').blur(function () {
+                                    test2 = $("#Number").val();
+                                if (test2 == "") {
+                                    $("#Number").css('background-color', 'red');
+                                    document.getElementById("login").disabled = true;
+                            }
+            else {
+                                    $("#Number").css('background-color', 'green');
+                                    if (document.getElementById('email').style.backgroundColor == "green" && document.getElementById('Number').style.backgroundColor == "green" && document.getElementById('mssgme').style.backgroundColor == "green") {
+                                        document.getElementById("login").disabled = false;
+                                    }
+                            }
+                        });
+                    });
+    </script>
+
+<script type="text/javascript">
+
+            
+$(function () {
+var test2;
+                       
+$('#Number').blur(function () {
+                            test2 = $("#Number").val();
+                        if (test2 == "") {
+                            $("#Number").css('background-color', 'red');
+                            document.getElementById("login").disabled = true;
+                    }
+else {
+            $("#Number").css('background-color', 'green');
+                            if (document.getElementById('email').style.backgroundColor == "green" && document.getElementById('Number').style.backgroundColor == "green" && document.getElementById('mssgme').style.backgroundColor == "green") {
+                                document.getElementById("login").disabled = false;
+                            }
+    }
+});
+});
+</script>

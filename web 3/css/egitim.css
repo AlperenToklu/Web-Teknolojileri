@@ -1,0 +1,73 @@
+#foto {
+float:left;
+margin-top:-15px;
+margin-left:-6px;
+}
+
+#ustmenu li{
+      overflow: hidden;
+       list-style-type: none;
+       background-color: black;
+       padding: 0px;
+       width: 200px;
+       height: 50px;
+       margin: 5px;
+       font-size: 20px;
+       font-family: calibri,arial,verdana;
+       line-height: 50px;
+       float: left;
+        
+     }
+.clear
+
+          {clear:both;}
+     
+     #ustmenu a{
+       padding-top: 5px;
+       text-decoration: none;
+       color: darkgrey;
+       display: block;   
+       text-align: center;
+       transition: 1s; 
+       
+     }
+     
+      #ustmenu span{
+       display: block;
+       margin-top:-60px;
+     }
+     
+     #ustmenu a:hover{
+      
+       color: white;
+       margin-top:55px;}
+
+
+
+.baslik{
+background-color:grey;
+padding:10px;
+margin-top:10px;
+height:700px;
+margin-left:-10px;
+margin-right:-10px;
+
+
+
+}
+
+.footerstil p {
+        font-size: 1.2em;
+        color: #f44336;
+        line-height: 1.8em;
+        letter-spacing: 2px;
+    }
+.footerstil {
+   margin: 2em 0;
+    text-align: center;
+}
+
+.baslik h1{
+text-align: center;
+color:blue;
+}
