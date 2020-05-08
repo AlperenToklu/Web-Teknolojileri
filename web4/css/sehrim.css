@@ -1,0 +1,49 @@
+
+body {
+background: url(../images/mavi.jpg)repeat 0px 0px;
+ background-attachment: fixed;
+font-family: 'Open Sans', sans-serif;
+    
+    background-size: cover;
+    display:blocK;
+}
+
+.a{
+ float: left;
+    display: inline-block;
+    height: 700px;
+    width: 300px;
+    margin: 10px;
+    color: red;
+ 
+
+
+
+}
+.sehrimdiv1{
+background-color:red;
+
+
+
+
+}
+
+#anadiv{
+
+ height: 700px;
+    width: 960px;
+    margin-right: auto;
+    margin-left: auto;
+    background-color: #FFF;}
+
+.footerstil p {
+        font-size: 1.2em;
+        color: #f44336;
+        line-height: 1.8em;
+        letter-spacing: 2px;
+    }
+.footerstil {
+   margin: 2em 0;
+    text-align: center;
+}
+
